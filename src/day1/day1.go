@@ -18,6 +18,7 @@ func main() {
 
 	scanner := bufio.NewScanner(file)
 	var total int64
+
 	for scanner.Scan() {
 		var currentNo, convErr = strconv.ParseInt(scanner.Text(), 10, 64)
 		if convErr != nil {
