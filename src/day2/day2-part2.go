@@ -30,14 +30,14 @@ func main() {
 
 			diffCount := 0
 
-			for i, _ := range characterArray {
+			for i := range characterArray {
 				if characterArray[i] != characterArray2[i] {
 					diffCount++
 				}
 			}
 
 			if diffCount == 1 {
-				for i, _ := range characterArray {
+				for i := range characterArray {
 					if characterArray[i] == characterArray2[i] {
 						fmt.Print(characterArray[i])
 					}
